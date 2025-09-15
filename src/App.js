@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import Inicio from './Inicio';
+
+const Descripcion = () => { //esto es un componente
+  return <p>El resultado es: </p>
+}
 
 function App() {
+  const mensaje = 'Holis desde variable'
+  const a = 5
+  const b = 123
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Inicio color='blue' message='Bienvenid@ a mi primera App'/>
+      <Inicio color='green' message='Estoy haciendo un curso de React'/>
+      <strong>Trabajando en ello...</strong>
+      <Descripcion />  {a + b}
+      <br />
+      {mensaje + ' y evaluar en JSX'} {/*las llaves o curly braces se usan para evaluar tus variables, estas pueden ser strings, numeros, listas, elementos pero NO se pueden los objetos */}
     </div>
   );
 }
