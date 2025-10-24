@@ -1,7 +1,6 @@
-const Inicio = (props) => { //esto es un componente
-    console.log(props)
-  return <h1 style={{color: props.color}}>
-    {props.message}
+const Inicio = ({color, message}) => { //esto es un componente
+  return <h1 style={{color: color}}>
+    {message}
   </h1>
 }
 
