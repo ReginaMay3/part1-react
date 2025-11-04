@@ -5,14 +5,13 @@ import Page from './Page';
 function App() {
   return (
     <>
-      <div className="App">
+      <div class="sm:text-left padding: 15px; m-auto p-[25px] text-center">
         <Inicio color='var(--grad-rose)' message='Regina May'/>
         <br/>
         <Inicio fontSize='25px' color='var(--grad-rose)' message='Junior Front-end Developer'/>
         <br/>
         <Page />  
       </div>
-      <></>
     </>
   );
 }
