@@ -1,5 +1,13 @@
-const Inicio = ({color, message}) => { //esto es un componente
-  return <h1 style={{color: color}}>
+import './Inicio.css';
+
+const Inicio = ({color, message, fontSize}) => { //esto es un componente
+  return <h1 
+    className={color.includes('grad-rose') ? 'gradient-text' : ''}
+    style={{
+      color: color.includes('grad-rose') ? undefined : color,
+      fontSize: fontSize || '2em'
+    }}
+  >
     {message}
   </h1>
 }

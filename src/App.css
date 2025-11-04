@@ -1,11 +1,79 @@
-.App {
-  text-align: center;
+@import "tailwindcss";
 
+:root {
+  --grad-rose: linear-gradient(90deg, rgb(151, 0, 118) 0%, rgb(250, 163, 212) 100%);
+  --grad-blue: linear-gradient(90deg, #2c1d6e 0%, #2c1d6e67 50%, #2c1d6e 100%);
+}
+/* Estilo por defecto (pantallas > 900px) */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  text-align: left;
+  padding: 25px;
+  margin: auto;
 }
 h1 {
   padding: 0;
   margin: 0 auto;
+ 
 }
 body {
-  background-color: rgba(138, 43, 226, 0.45);
+  background-image: url('../public/images/f3.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
+
+h2, h3 {
+  /* color: rgba(180, 236, 250, 0.9); */
+  background: var(--grad-blue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}  
+
+p {
+  color: rgba(255, 255, 255, 0.8);
+}
+#ocupacion {
+  size: 10px;
+}
+
+#me {
+  height: 200px;
+  width: auto;
+  border-radius: 50px;
+  margin-left: 50px;
+}
+
+.profile {
+  background-color: rgba(98, 121, 187, 0.24); /* Fondo semitransparente */
+  padding: 10px;
+  border-radius: 10px;
+  width: 300px; 
+  height: auto;
+  text-align: justify;
+  z-index: 100;
+}
+
+
+/* Media query para pantallas entre 300px y 900px */
+@media screen and (min-width: 300px) and (max-width: 900px) {
+  .App {
+    text-align: center;
+    padding: 15px;
+  }
+  .profile {
+    width: auto; 
+    height: auto;
+  }
+#me {
+    margin: auto;
+  }
+}
+

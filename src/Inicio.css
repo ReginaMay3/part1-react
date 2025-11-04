@@ -1,0 +1,7 @@
+.gradient-text {
+  background: var(--grad-rose);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
