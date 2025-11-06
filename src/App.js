@@ -1,18 +1,26 @@
 import './App.css';
-import Inicio from './Inicio';
-import Page from './Page';
+import Home from './Home';
+import Setup from './Setup';
+import More from './More';
+import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 
 function App() {
   return (
-    <>
-      <div class="sm:text-left padding: 15px; m-auto p-[25px] text-center">
-        <Inicio color='var(--grad-rose)' message='Regina May'/>
+    <BrowserRouter>
+      <div class="md:text-left p-2; m-auto p-[25px] text-center">
+        <nav class="flex gap-4 justify-end text-pink-500">
+          <Link to="/" class="m-0">Home</Link>
+          <Link to="/setup">Setup</Link>
+          <Link to="/more">Contact</Link>
+        </nav>
         <br/>
-        <Inicio fontSize='25px' color='var(--grad-rose)' message='Junior Front-end Developer'/>
-        <br/>
-        <Page />  
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/setup' element={<Setup />} />
+          <Route path='/more' element={<More />} />
+        </Routes>
       </div>
-    </>
+    </BrowserRouter>
   );
 }
 
