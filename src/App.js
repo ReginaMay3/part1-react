@@ -7,13 +7,12 @@ import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 function App() {
   return (
     <BrowserRouter>
-      <div class="md:text-left p-2; m-auto p-[25px] text-center">
-        <nav class="flex gap-4 justify-end text-pink-500">
-          <Link to="/" class="m-0">Home</Link>
+      <div>
+        <nav class="flex p-6 gap-4 justify-end text-pink-500">
+          <Link to="/">Home</Link>
           <Link to="/setup">Setup</Link>
           <Link to="/more">Contact</Link>
         </nav>
-        <br/>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/setup' element={<Setup />} />

@@ -3,13 +3,11 @@ import Page from './Page';
 
 function Home() {
     return (
-        <>
-            <Inicio color='var(--grad-rose)' message='Regina May'/>
-            <br/>
-            <Inicio fontSize='25px' color='var(--grad-rose)' message='Junior Front-end Developer'/>
-            <br/>
+        <div class="md:text-left p-4 my-3; m-auto py-2 text-center">
+            <Inicio message='Regina May' fontSize='28px'/>
+            <Inicio fontSize='25px' message='Junior Front-end Developer'/>
             <Page /> 
-        </>
+        </div>
     );
 }
 export default Home

@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --grad-rose: linear-gradient(90deg, rgb(151, 0, 118) 0%, rgb(250, 163, 212) 100%);
-  --grad-blue: linear-gradient(90deg, #2c1d6e 0%, #2c1d6e67 50%, #2c1d6e 100%);
-}
 @layer base {
   body {
     background-image: url('../public/images/f3.webp');
@@ -26,11 +22,5 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-h2, h3 {
-  background: var(--grad-blue);
-  -webkit-background-clip: text;
-  background-clip: text;
-}  
 
 
