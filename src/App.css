@@ -15,8 +15,16 @@
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
   }
 }
+/* 
+#root {
+  width: 1920px;
+  height: 1080px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.3);
+} */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
